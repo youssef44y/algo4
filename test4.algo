@@ -1,0 +1,17 @@
+ALGORITHM palindrome
+VAR
+  i:INTEGER;
+  palindrom:boolean;
+  ch:string;
+BEGIN
+    write("ch=")
+    i:=0
+    REPEAT
+        palindrom:=vrai
+        i:= i+1
+        if (ch[i]<>ch[length(ch)-i+1]) then
+        palindrom:=false
+        end if
+    UNTIL (i>=length(ch)div2)
+    
+END
